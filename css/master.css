@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.carrusel-container{
+  margin:auto;
+  width: 400px;
+}
+.carrusel{
+  margin: auto;
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+.carrusel > div{
+  position: absolute;
+  top:40%;
+  display: none;
+}
+.carrusel .carrusel-show{
+  display: block;
+}
+
+/*circulos*/
+
+.circle{
+  text-align: center;
+  margin-top: 5%;
+  margin-left: -25%;
+}
+.circle li{
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.circle li.active{
+  background: pink;
+}
+
+
+/*flechas*/
+#antes  , #despues{
+  position: absolute;
+  text-decoration: none;
+  color: red;
+  margin: -15%;
+  margin-left: 25%;
+  font-size: 30px;
+  font-weight: bold;
+}
+.position{
+  margin-top: 18% !important;
+  margin-left: -9% !important;
+}
