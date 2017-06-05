@@ -39,12 +39,12 @@ $("#c-1").on("click",function(){
    $("#antes").click(function(){
          imgSecuencia();
          clearInterval(aletorio);
-         aletorio;
+         aletorio =setInterval(imgSecuencia,5000);
        });
        $("#despues").click(function(){
          $('.carrusel div:first-child').fadeOut(3000);
-         $('.carrusel div:last-child').fadeIn(1000).prependTo('.carrusel');
+         $('.carrusel div:last-child').fadeIn(3000).prependTo('.carrusel');
          clearInterval(aletorio);
-         aletorio;
+         aletorio =setInterval(imgSecuencia, 5000);
        });
    });
