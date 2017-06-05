@@ -41,7 +41,7 @@ $("#c-1").on("click",function(){
          clearInterval(aletorio);
          aletorio =setInterval(imgSecuencia,5000);
        });
-       $("#despues").on("cllick",function(){
+       $("#despues").on("click",function(){
          $('.carrusel div:first-child').fadeOut(3000);
          $('.carrusel div:last-child').fadeIn(3000).prependTo('.carrusel');
          clearInterval(aletorio);
